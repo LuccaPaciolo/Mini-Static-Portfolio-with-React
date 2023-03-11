@@ -1,13 +1,133 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Navbar Styling*/
+
+.nav {
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.nav-logo {
+    width: 2em;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+.nav h3 {
+    font-size: 1.5rem;
+    color: purple;    
+    cursor: pointer;
+}
+
+/*Card Styling */
+
+.card {
+   
+    display: flex;
+    padding: 2em;
+    gap: 2em;
+    flex-direction: row;
+
+    
+}
+
+.card-image-holder {   
+    height: 20em;
+    width: 15em;
+}
+
+.card-image {
+    height: 100%;
+    width: 15em;
+    border-radius: 1em;    
+}
+
+
+.location-icon, 
+.date-icon {
+    width: .9em;
+    padding-right: 1em;
+       
+}
+
+span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;     
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;    
+    margin: 2em;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: .2em 0em 0em 0em;
+}
+.card p {
+    padding: 0;
+    margin: .2em;
+}
+
+
+    
+@media  only screen and (min-width: 700px){
+
+    /* html {
+        display: none;
+    } */
+
+    .card-container {
+        display: flex;
+    }
+  
+    .card {
+        display: flex;
+        flex-direction: row;    
+              
+        
+    }
+
+   
+
+
+}
+
+ @media  only screen and (min-width: 1200px){
+
+       /* html {
+        display: none;
+    }
+  */
+
+  
+
+  .card-container {
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+    /* border: 2px solid red; */
+    margin: 2em;
+    
+      
+  }
+
+
+} 
